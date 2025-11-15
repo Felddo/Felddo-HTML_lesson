@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="main.html">Квартиры Владивостока</a><br>
+    <a href="table.html">Список квартир Владивостока</a>
+    <hr>
+
+    <details>
+        <summary> График </summary>
+        <form>
+            Значение по оси ОХ Значение по оси ОY <br>
+                <label><input type="radio" name="street" value="0"> Улица</label>
+                <label><input type="checkbox" name="mx_m2" value="0"> Максимальная квадратура </label><br>
+                <label><input type="radio" name="street" value="1"> Тип </label>
+                <label><input type="checkbox" name="mn_m2" value="1"> Минимальная квадратура <br></label>
+
+            <input type="button" value="Построить">
+        </form>
+    </details>
+    <details>
+        <summary> Фильтр </summary>
+        <form>
+            <label>Название:
+            <input type="text" id="name"><br></label>
+            <label>Улица:
+            <input type="text" id="street"><br></label>
+            <label>Тип:
+            <input type="text" id="pets"><br></label>
+            <label>Номер квартиры:
+            <input type="number" id="smoke"><br></label>
+            Кол-во комнат от
+                <label><input type="number" id="minroom"></label> до <label><input type="number" id="maxroom"><br></label>
+            Кол-во гостей от
+                <label><input type="number" id="minguest"></label> до <label><input type="number" id="maxguest"><br></label>
+            m<sup>2</sup> от
+                <label><input type="number" id="minM"></label> до <label><input type="number" id="maxM"><br></label>
+            <input type="button" value="Найти">
+        </form>
+    </details>
+    <details>
+        <summary> Сортировка </summary>
+        <form>
+            Первый уровень:
+            <select name="firstlevel">
+                <option value="0"> Нет </option>
+                <option value="1"> Название </option>
+                <option value="2"> Улица </option>
+                <option value="3"> Тип </option>
+                <option value="4"> Номер квартиры </option>
+                <option value="5"> Кол-во комнат </option>
+                <option value="6"> Кол-во гостей </option>
+                <option value="7"> m<sup>2</sup> </option>
+            </select>
+            По убыванию?
+            <input type="checkbox" name="decrase" value="0"><br>
+            Второй уровень:
+            <select name="secondlevel">
+                <option value="0"> Нет </option>
+                <option value="1"> Название </option>
+                <option value="2"> Улица </option>
+                <option value="3"> Тип </option>
+                <option value="4"> Номер квартиры </option>
+                <option value="5"> Кол-во комнат </option>
+                <option value="6"> Кол-во гостей </option>
+                <option value="7"> m<sup>2</sup> </option>
+            </select>
+            По убыванию?
+            <input type="checkbox" name="decrase" value="0"><br>
+            Третий уровень:
+            <select name="thirdlevel">
+                <option value="0"> Нет </option>
+                <option value="1"> Название </option>
+                <option value="2"> Улица </option>
+                <option value="3"> Тип </option>
+                <option value="4"> Номер квартиры </option>
+                <option value="5"> Кол-во комнат </option>
+                <option value="6"> Кол-во гостей </option>
+                <option value="7"> m<sup>2</sup> </option>
+            </select>
+            По убыванию?
+            <input type="checkbox" name="decrase" value="0"><br>
+            <input type="button" value="Сортировать">
+        </form>
+    </details>
+
+    <table border="1" cellspacing="0">
+    <tr>
+        <th>Название</th>
+        <th>Улица</th>
+        <th>Тип</th>
+        <th>Номер квартиры</th>
+        <th>Кол-во комнат</th>
+        <th>Кол-во гостей</th>
+        <th>m<sup>2</sup></th>
+    </tr>
+    <tr>
+        <td>Квартира с видом на город</td>
+        <td>ул. Некрасовская</td>
+        <td>Дом</td>
+        <td>50</td>
+        <td>2</td>
+        <td>6</td>
+        <td>37</td>
+    </tr>
+    <tr>
+        <td>Апартаменты с панорамным видом</td>
+        <td>ул. 100-летия Владивостока</td>
+        <td>Квартира</td>
+        <td>148</td>
+        <td>1</td>
+        <td>3</td>
+        <td>35</td>
+    </tr>
+    <tr>
+        <td>Мини-студия на Заре</td>
+        <td>ул. Уборевича</td>
+        <td>Стуия</td>
+        <td>23</td>
+        <td>1</td>
+        <td>2</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td>Лофт в центре города</td>
+        <td>ул. Светланская</td>
+        <td>Дом</td>
+        <td>12</td>
+        <td>2</td>
+        <td>4</td>
+        <td>60</td>
+    </tr>
+    <tr>
+        <td>Квартира-студия с ремонтом</td>
+        <td>ул. Алеутская</td>
+        <td>Квартира</td>
+        <td>33</td>
+        <td>1</td>
+        <td>1</td>
+        <td>25</td>
+    </tr>
+    <tr>
+        <td>Двушка в спальном районе</td>
+        <td>ул. Русская</td>
+        <td>Квартира</td>
+        <td>4</td>
+        <td>2</td>
+        <td>9</td>
+        <td>54</td>
+    </tr>
+    <tr>
+        <td>Апартаменты с кухней-гостиной</td>
+        <td>ул. Набережная</td>
+        <td>Дом</td>
+        <td>1</td>
+        <td>1</td>
+        <td>7</td>
+        <td>41</td>
+    </tr>
+    <tr>
+        <td>Семейная квартира у парка</td>
+        <td>ул. Фонтанная</td>
+        <td>Квартира</td>
+        <td>18</td>
+        <td>3</td>
+        <td>2</td>
+        <td>68</td>
+    </tr>
+    <tr>
+        <td>Студия для молодых специалистов</td>
+        <td>ул. Лазо</td>
+        <td>Студия</td>
+        <td>77</td>
+        <td>1</td>
+        <td>5</td>
+        <td>22</td>
+    </tr>
+    <tr>
+        <td>Видовая квартира на набережной</td>
+        <td>ул. Крыгина</td>
+        <td>Квартира</td>
+        <td>9</td>
+        <td>2</td>
+        <td>11</td>
+        <td>58</td>
+    </tr>
+    <tr>
+        <td>Малосемейка с мебелью</td>
+        <td>Океанский проспект</td>
+        <td>Квартира</td>
+        <td>56</td>
+        <td>1</td>
+        <td>6</td>
+        <td>30</td>
+    </tr>
+    <tr>
+        <td>Просторная трешка</td>
+        <td>ул. Гоголя</td>
+        <td>Квартира</td>
+        <td>21</td>
+        <td>3</td>
+        <td>3</td>
+        <td>80</td>
+    </tr>
+    <tr>
+        <td>Студия с готовым ремонтом</td>
+        <td>ул. Пушкинская</td>
+        <td>Студия</td>
+        <td>44</td>
+        <td>1</td>
+        <td>2</td>
+        <td>26</td>
+    </tr>
+    <tr>
+        <td>Квартира с камином и террасой</td>
+        <td>ул. Садовая</td>
+        <td>Квартира</td>
+        <td>102</td>
+        <td>2</td>
+        <td>1</td>
+        <td>65</td>
+    </tr>
+    <tr>
+        <td>Дом у метро</td>
+        <td>ул. Борисенко</td>
+        <td>Дом</td>
+        <td>65</td>
+        <td>2</td>
+        <td>7</td>
+        <td>48</td>
+    </tr>
+    <tr>
+        <td>Апартаменты под ключ</td>
+        <td>ул. Махалина</td>
+        <td>Квартира</td>
+        <td>11</td>
+        <td>1</td>
+        <td>10</td>
+        <td>33</td>
+    </tr>
+    <tr>
+        <td>Дом за городом</td>
+        <td>ул. Калинина</td>
+        <td>Дом</td>
+        <td>27</td>
+        <td>2</td>
+        <td>4</td>
+        <td>52</td>
+    </tr>
+    <tr>
+        <td>Студия в отремонтированном доме</td>
+        <td>ул. Нейбута</td>
+        <td>Студия</td>
+        <td>3</td>
+        <td>1</td>
+        <td>8</td>
+        <td>29</td>
+    </tr>
+    <tr>
+        <td>Вид на озеро</td>
+        <td>ул. Озерная</td>
+        <td>Дом</td>
+        <td>5</td>
+        <td>2</td>
+        <td>5</td>
+        <td>55</td>
+    </tr>
+    <tr>
+        <td>Квартира для студентов</td>
+        <td>ул. Студенческая</td>
+        <td>Квартира</td>
+        <td>8</td>
+        <td>1</td>
+        <td>1</td>
+        <td>18</td>
+    </tr>
+    <tr>
+        <td>Пентхаус с панорамными окнами</td>
+        <td>ул. Адмирала Фокина</td>
+        <td>Дом</td>
+        <td>5</td>
+        <td>3</td>
+        <td>15</td>
+        <td>120</td>
+    </tr>
+    <tr>
+        <td>Уютное гнездышко</td>
+        <td>ул. Пологая</td>
+        <td>Квартира</td>
+        <td>7</td>
+        <td>1</td>
+        <td>3</td>
+        <td>31</td>
+    </tr>
+    <tr>
+        <td>Свободная планировка</td>
+        <td>ул. Хабаровская</td>
+        <td>Студия</td>
+        <td>22</td>
+        <td>2</td>
+        <td>6</td>
+        <td>45</td>
+    </tr>
+    <tr>
+        <td>Квартира с кабинетом</td>
+        <td>ул. Прапорщика Комарова</td>
+        <td>Квартира</td>
+        <td>22</td>
+        <td>2</td>
+        <td>2</td>
+        <td>49</td>
+    </tr>
+    <tr>
+        <td>Студия с видом на сад</td>
+        <td>Партизанский проспект</td>
+        <td>Студия</td>
+        <td>6</td>
+        <td>1</td>
+        <td>4</td>
+        <td>24</td>
+    </tr>
+    <tr>
+        <td>Двушка с раздельными комнатами</td>
+        <td>ул. Дальзаводская</td>
+        <td>Квартира</td>
+        <td>41</td>
+        <td>2</td>
+        <td>8</td>
+        <td>51</td>
+    </tr>
+    <tr>
+        <td>Апартаменты с гардеробной</td>
+        <td>ул. Мордовцева</td>
+        <td>Апартаманты</td>
+        <td>55</td>
+        <td>1</td>
+        <td>9</td>
+        <td>38</td>
+    </tr>
+    <tr>
+        <td>Квартира в историческом центре</td>
+        <td>ул. Пестеля</td>
+        <td>Квартира</td>
+        <td>2</td>
+        <td>2</td>
+        <td>3</td>
+        <td>47</td>
+    </tr>
+    <tr>
+        <td>Современная студия</td>
+        <td>Проспект Красного Знамени</td>
+        <td>Студия</td>
+        <td>90</td>
+        <td>1</td>
+        <td>11</td>
+        <td>27</td>
+    </tr>
+    <tr>
+        <td>Семейное гнездо</td>
+        <td>ул. Сахалинская</td>
+        <td>Апартаманты</td>
+        <td>17</td>
+        <td>4</td>
+        <td>1</td>
+        <td>95</td>
+    </tr>
+    <tr>
+        <td>Апартаменты у моря</td>
+        <td>ул. Вокзальная</td>
+        <td>Апартаменты</td>
+        <td>29</td>
+        <td>1</td>
+        <td>2</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>Квартира с зимним садом</td>
+        <td>ул. Стрелочная</td>
+        <td>Квартира</td>
+        <td>73</td>
+        <td>2</td>
+        <td>12</td>
+        <td>70</td>
+    </tr>
+    <tr>
+        <td>Студия для командированных</td>
+        <td>ул. Фадеева</td>
+        <td>Студия</td>
+        <td>36</td>
+        <td>1</td>
+        <td>7</td>
+        <td>23</td>
+    </tr>
+    <tr>
+        <td>Двушка с евроремонтом</td>
+        <td>ул. Острякова</td>
+        <td>Квартира</td>
+        <td>50</td>
+        <td>2</td>
+        <td>5</td>
+        <td>53</td>
+    </tr>
+    <tr>
+        <td>Вид на горы</td>
+        <td>ул. Патрокл</td>
+        <td>Дом</td>
+        <td>81</td>
+        <td>1</td>
+        <td>4</td>
+        <td>34</td>
+    </tr>
+    <tr>
+        <td>Классическая трешка</td>
+        <td>ул. Ленинская</td>
+        <td>Квартира</td>
+        <td>25</td>
+        <td>3</td>
+        <td>6</td>
+        <td>78</td>
+    </tr>
+    <tr>
+        <td>Апартаменты с техникой</td>
+        <td>ул. Батарейная</td>
+        <td>Апартаменты</td>
+        <td>48</td>
+        <td>1</td>
+        <td>3</td>
+        <td>36</td>
+    </tr>
+    <tr>
+        <td>Квартира в тихом дворе</td>
+        <td>ул. Тихая</td>
+        <td>Квартира</td>
+        <td>11</td>
+        <td>2</td>
+        <td>2</td>
+        <td>43</td>
+    </tr>
+    <tr>
+        <td>Светлая студия</td>
+        <td>ул. Баляева</td>
+        <td>СТудия</td>
+        <td>62</td>
+        <td>1</td>
+        <td>5</td>
+        <td>25</td>
+    </tr>
+    <tr>
+        <td>Двушка для семьи с детьми</td>
+        <td>ул. Котельникова</td>
+        <td>Квартира</td>
+        <td>39</td>
+        <td>2</td>
+        <td>1</td>
+        <td>56</td>
+    </tr>
+    <tr>
+        <td>Пентхаус с выходом на крышу</td>
+        <td>ул. Высокая</td>
+        <td>Дом</td>
+        <td>1</td>
+        <td>2</td>
+        <td>16</td>
+        <td>90</td>
+    </tr>
+    <tr>
+        <td>Квартира с библиотекой</td>
+        <td>ул. Пограничная</td>
+        <td>Квартира</td>
+        <td>13</td>
+        <td>1</td>
+        <td>9</td>
+        <td>40</td>
+    </tr>
+    <tr>
+        <td>Студия в апарт-комплексе</td>
+        <td>ул. Каплунова</td>
+        <td>Студия</td>
+        <td>3</td>
+        <td>1</td>
+        <td>12</td>
+        <td>32</td>
+    </tr>
+    <tr>
+        <td>Вид на реку и лес</td>
+        <td>ул. Береговая</td>
+        <td>Дом</td>
+        <td>7</td>
+        <td>2</td>
+        <td>4</td>
+        <td>60</td>
+    </tr>
+    <tr>
+        <td>Квартира с балконом-лоджией</td>
+        <td>ул. Давыдова</td>
+        <td>Квартира</td>
+        <td>71</td>
+        <td>1</td>
+        <td>8</td>
+        <td>37</td>
+    </tr>
+    <tr>
+        <td>Уютная однушка</td>
+        <td>ул. Шевченко</td>
+        <td>Студия</td>
+        <td>24</td>
+        <td>1</td>
+        <td>6</td>
+        <td>28</td>
+    </tr>
+    <tr>
+        <td>Двушка в кирпичном доме</td>
+        <td>ул. Красного Знамени</td>
+        <td>Квартира</td>
+        <td>33</td>
+        <td>2</td>
+        <td>10</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>Апартаменты с консьержем</td>
+        <td>ул. Котовского</td>
+        <td>Квартира</td>
+        <td>4</td>
+        <td>2</td>
+        <td>7</td>
+        <td>58</td>
+    </tr>
+    <tr>
+        <td>Студия для творческих личностей</td>
+        <td>ул. Иртышская</td>
+        <td>Студия</td>
+        <td>9</td>
+        <td>1</td>
+        <td>2</td>
+        <td>26</td>
+    </tr>
+</table>
+</body>
+</html>
