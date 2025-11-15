@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+</head>
+
+
+<body>
+
+    
+    <header>
+        <nav class="navbar navbar-expand-md bg-light navbar-light" >
+            <a class="navbar-brand" href="#">Топ квартир</a>
+            <button class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="main.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="table.html">Список апартаментов</a>
+                    </li>
+                </ul>
+                <form  class="d-flex">
+                    <input class="form-control" type="text" placeholder="Найти">
+                    <button class="btn btn-outline-success" type="submit">Найти</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="main">
+        <div id="gallery" class="carousel slide h-50" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="photo/first.jpg" class="img-fluid h-25 w-100 d-block car m-auto" alt="Апартаменты в ЖК Aura Apartments">
+                </div>
+                <div class="carousel-item ">
+                    <img src="photo/second.jpg" class="img-fluid h-25 w-100 d-block car m-auto" alt="Просторная гостиная в апартаментах на Чистых прудах">
+                </div>
+                <div class="carousel-item">
+                    <img src="photo/third.jpg" class="img-fluid h-25 w-100 d-block  car m-auto" alt="Квартира с видом на исторический центр">
+                </div>
+                <div class="carousel-item">
+                    <img src="photo/fourth.jpg" class="img-fluid h-25 w-100 d-block  car m-auto" alt="Апартаменты с большим туалетом">
+                </div>
+            </div>
+
+            <button 
+            class="carousel-control-prev" 
+            type="button" 
+            data-bs-target="#gallery" 
+            data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button 
+            class="carousel-control-next" 
+            type="button" 
+            data-bs-target="#gallery" 
+            data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Следующий</span>
+            </button>
+        </div>
+    </div>
+   
+        
+ <div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-12 col-10">
+            <div class="row justify-content-center">
+                <h2 class="text-center">Квартира с видом на город</h2>
+                <div class="col-lg-8 col-md-8 col-8">
+                    <p class="text">
+                        Предлагаю вашему вниманию прекрасную двухкомнатную квартиру во Владивостоке, расположенную в 1 минуте 
+                        от Мариинского театра оперы и балета. В квартире есть все для комфортного проживания 4-х человек. 
+                        Квартира полностью обустроена, очень теплая и светлая. Вид на город с трёх сторон: восток, юг, запад.
+                        В доме находится магазин Квартет вкусов и К&Б.
+                    </p>
+                    <button class=" btn btn-outline-success fs-6 fs-md-5 fs-lg-4" type="submit">Найти</button>
+                </div>
+                <div class="col-lg-4 col-md-4 col-4">
+                    <img class="img-fluid h-100 w-100" src="photo/one.jpg" alt="Квартира с видом на город">
+                </div>
+            </div>
+
+
+            <div class="row justify-content-center">
+                <h2 class="text-center">Апартаменты на 20м этаже</h2>
+                <div class="col-lg-8 col-md-8 col-8 order-lg-2 order-md-2 order-mn-1">
+                    <p class="text">
+                        Новая квартира с камерной атмосферой в новом доме. Современный дизайнерский ремонт и оснащение.
+                        Последний 20й этаж, вид на мост на остров Русский и бухту Улисс с доступом на эксплуатируемую крышу.
+                        Удобная транспортная развязка, рядом остановки общественного транспорта, можно легко уехать в любой конец города.
+                        В 5 минутах езды по Золотому мосту до центра города и в 10 минутах езды по Русскому мосту до о. Русский.
+                        <br>
+                    </p>
+                    <button class=" btn btn-outline-success fs-6 fs-md-5 fs-lg-4" type="submit">Найти</button>
+                </div>
+                <div class="col-lg-4 col-md-4 col-4 order-lg-1 order-md-1 order-mn-2">
+                    <img class="img-fluid h-100 w-100" src="photo/two.jpg" alt="Апартаменты на 20м этаже">
+                </div>
+            </div>
+        </div>
+  
+        <div class="col-lg-4 col-md-12 col-10">
+            <div class="row row-cols-lg-1 row-cols-md-2 row-cols-1">
+                <div class="col p-2">
+                    <div class="row justify-content-center h-100">
+                        <div class="col">
+                            <h2 class="small_title text-center">Мини-студия на Заре</h2>
+                            <p class="text small_text">
+                                Уютная мини-студия в пяти минутах от остановки Магнитогорская. 
+                                Удобное расположение - широкая транспортная развязка до любой точки города.
+                            </p>
+                            <button class=" btn btn-outline-success fs-6 fs-md-5 fs-lg-4" type="submit">Найти</button>
+                        </div>
+                        <div class="col">
+                            <img class="img-fluid h-100 w-100" src="photo/three.jpg" alt="Мини-студия на Заре">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col p-2">
+                    <div class="row justify-content-center h-100">
+                        <div class="col">
+                            <h2 class="small_title text-center">Студия в новом районе</h2>
+                            <p class="text small_text">
+                                Сдаётся квартира посуточно! Новый дом, новый ремонт. 
+                                Есть вся необходимая новая, современная качественная мебель
+                            </p>
+                            <button class=" btn btn-outline-success fs-6 fs-md-5 fs-lg-4" type="submit">Найти</button>
+                        </div>
+                        <div class="col">
+                            <img class="img-fluid h-100 w-100" src="photo/four.jpg" alt="студия в новом районе">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col p-2">
+                    <div class="row justify-content-center h-100">
+                        <div class="col">
+                            <h2 class="small_title text-center">Просторная светлая студия</h2>
+                            <p class="text small_text">
+                                Дом находится на оживленном перекрестке улицы Адмирала Фокина и Океанского проспекта. 
+                                Самое удобное расположение.
+                            </p>
+                            <button class=" btn btn-outline-success fs-6 fs-md-5 fs-lg-4" type="submit">Найти</button>
+                        </div>
+                        <div class="col">
+                            <img class="img-fluid h-100 w-100" src="photo/five.jpg" alt="Просторная светлая студия">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col p-2">
+                    <div class="row justify-content-center h-100">
+                        <div class="col">
+                            <h2 class="small_title text-center">Квартира в центре</h2>
+                            <p class="text small_text">
+                                Дом расположен в центре Владивостока. В 10 мин. ходьбы крупный транспортный узел: 
+                                конечная остановка большинства автобусных маршрутов.
+                            </p>
+                            <button class=" btn btn-outline-success fs-6 fs-md-5 fs-lg-4" type="submit">Найти</button>
+                        </div>
+                        <div class="col">
+                            <img class="img-fluid h-100 w-100" src="photo/six.jpg" alt="Квартира в центре">
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+         
+
+                
+        
+        </div>
+    </div>
+</div>
+    <!-- <footer>
+        Б9123-09.03.04/6 Гнатенко Андрей
+    </footer> -->
+</body>
+</html>
