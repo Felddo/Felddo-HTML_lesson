@@ -1,0 +1,91 @@
+colorText = #6f6d6d
+
+html
+  color colorText
+
+big-let(size, col)
+  font-size size
+  color col
+
+span
+  big-let(4rem, red)
+  vertical-align -5px
+
+back(size)
+  background-color #f1f1f1
+  box-shadow 4px 5px 10px rgba(0, 0, 0, 0.4)
+  padding: size + "%"
+  margin 0 0 1% 0
+
+div.images
+  display grid
+  grid-template-columns repeat(5, 1fr)
+  grid-gap 0.5%
+  back(1)
+   
+  & img
+    width: 100%
+
+section.building
+    display grid
+    grid-template-columns 1fr 1fr
+
+article
+  width 80%
+  margin auto
+  display grid
+  grid-template-columns repeat(3, 1fr)
+  grid-gap 4%
+  
+  & section
+    display grid
+    grid-template-columns 1fr 2fr
+    grid-gap 2%
+    align-items center
+    back(2)
+    
+    & h3
+      grid-column 1/3
+      margin 0
+      text-align center
+
+    & img
+      width: 100%
+
+h3
+  grid-column 1 / -1
+
+nav
+  back(0)
+  text-align right
+
+  & a
+    display inline-block
+    padding 1%
+    color colorText
+    text-decoration: none
+        
+    &:hover
+    &.active
+      background-color #f87777
+      color #f8f8f8   
+
+footer
+  background grey
+  color white
+
+.big
+    display block
+    margin auto
+
+@media (max-width: 700px)
+  div.images
+    grid-template-columns 1fr
+
+  article
+    grid-template-columns 1fr
+    width 100%
+
+  section.building
+    grid-template-columns 1fr
+    
