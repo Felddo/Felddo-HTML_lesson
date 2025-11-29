@@ -1,0 +1,69 @@
+extends template
+
+block nav
+    nav
+        +createMenu(dictMenu, 'Список квартир Владивостока')
+
+block content
+    details
+        summary График
+        form Значение по оси ОХ Значение по оси ОY
+            br
+            label Улица
+                input(type="radio" name="street" value="0")
+            label Максимальная квадратура
+                input(type="checkbox" name="mx_m2" value="0")
+                br
+            label Тип
+                input(type="radio" name="street" value="1")
+            label Минимальная квадратура
+                input(type="checkbox" name="mx_m2" value="1")
+                br
+            input(type="button" value="Построить")
+
+    details
+        summary Фильтр
+        form
+            label Название:
+                input(type="text" id="name")
+                br
+            label Улица:
+                input(type="text" id="street")
+                br
+            label Тип:
+                input(type="text" id="pets")
+                br
+            label Номер квартиры:
+                input(type="number" id="smoke")
+                br
+            label Кол-во комнат от
+                input(type="number" id="minroom")
+            label до
+                input(type="number" id="maxroom")
+                br
+            label Кол-во гостей от
+                input(type="number" id="minguest")
+            label до
+                input(type="number" id="maxguest")
+                br
+            label m
+                sup 2
+                input(type="number" id="minM")
+            label до 
+                input(type="number" id="maxM")
+                br
+            input(type="button" value="Найти")
+
+
+    details
+        summary Сортировка
+        form
+            each level in ListLevels 
+                span= level.ru_level
+                +createLevels()
+                span По убыванию?
+                    input(type="checkbox" name="decrase" value="0")
+                br
+            input(type="button" value="Сортировать")
+
+    +createTable()

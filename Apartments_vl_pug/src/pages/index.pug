@@ -1,0 +1,45 @@
+extends template
+
+block nav
+    +createMenu(dictMenu, 'Главная')
+
+        
+block content
+    div.main
+        div.photos
+            each pict in listImages
+                if pict == 'first.jpg'
+                    div.photos__item.photos__item--small
+                        a(href="building.html") 
+                            img(src= require("../images/" + pict))
+                else
+                    if pict == 'fourth.jpg'
+                        div.photos__item.photos__item--small
+                            img(src= require("../images/" + pict))
+                    else
+                        div.photos__item.photos__item--big
+                            img(src= require("../images/" + pict))
+        
+        div.aparts-grid
+            div.big-block.big-block--first-big-apart
+                h2.big-block__header= listAparts[0].header
+                div.big-block__text= listAparts[0].text
+                    input.big-block__button(type="button" value="Подробнее")
+                div.image
+                    img(src= require("../images/" + listAparts[0].image))
+            div.big-block.big-block--second-big-apart
+                h2.big-block__header= listAparts[1].header
+                div.image
+                    img(src= require("../images/" + listAparts[1].image))
+                div.big-block__text= listAparts[1].text
+                    input.big-block__button.big-block__button--left-but(type="button" value="Подробнее")
+
+            each apart in listAparts.slice(2)
+                div.small-block
+                    h2.small-block__header= apart.header
+                    div.small-block__text= apart.text 
+                        input.big-block__button.small-block__button(type="button" value="Подробнее")
+                    div.small-block__image
+                        img(src= require("../images/" + apart.image))
+
+            
