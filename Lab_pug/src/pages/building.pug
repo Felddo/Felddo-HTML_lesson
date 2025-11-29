@@ -1,10 +1,17 @@
 extends template
 
-block nav
-    nav
-        +createMenuBuild(dictMenu, 'Aura Apartments')
+block header 
+    h2= structures[0].menuItem
 
+block nav
+
+    nav
+        +createMenuBuild(dictMenu, structures[0].menuItem)
+    
 block content
-    h1= OneApart.header
-    img(src= require("../images/" + OneApart.image), width='20%')
-    p= OneApart.text
+
+    img.big(src= require("../images/" + structures[0].pict))
+
+    section.building
+        p= structures[0].firstP
+        p= structures[0].secondP
