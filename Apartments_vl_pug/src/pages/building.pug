@@ -1,0 +1,10 @@
+extends template
+
+block nav
+    nav
+        +createMenuBuild(dictMenu, 'Aura Apartments')
+
+block content
+    h1= OneApart.header
+    img(src= require("../images/" + OneApart.image), width='20%')
+    p= OneApart.text
