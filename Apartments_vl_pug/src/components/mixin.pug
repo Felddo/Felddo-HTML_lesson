@@ -1,0 +1,38 @@
+mixin createMenu(menu, active)
+    div.menu
+        each value, key in menu
+            if active == key
+                a.menu__item.menu__item--active(href= value)= key
+            else
+                a.menu__item(href= value)= key
+    div.navi.navi__text= "О как"
+        form.navi__form
+            label 
+                input(type="text" placeholder="Поиск по сайту") 
+            input.navi__but(type="button" value="Найти")
+
+
+mixin createMenuBuild(menu, active)
+    div.menu
+        a.menu__item.menu__item--active(href= '#')= active
+        each value, key in menu
+            a.menu__item(href= value)= key
+    div.navi.navi__text= "О как"
+        form.navi__form
+            label 
+                input(type="text" placeholder="Поиск по сайту") 
+            input.navi__but(type="button" value="Найти")
+
+mixin createTable()
+    table(border="1" cellspacing="0")
+        each apart in table
+            tr
+                each item in apart
+                    td= item
+
+mixin createLevels()
+    select(name=eng_level)
+        option(value="0") Нет
+        - var i = 1
+        each name in ListCols
+            option(value=i)= name
