@@ -1,0 +1,50 @@
+<html >
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="task">
+        <img src="triangle_opposite.jpeg">
+        <div class="input">
+            <form>
+                <p>
+                    <select name="triangle">
+                        <option value="0">Катет и противолежащий угол</option>
+                        <option value="1">Катет и прилежащий к нему угол</option>
+                    </select>
+                    <input type="button" id="button" value="Показать">
+                </p>
+                <p>
+                    <label for="input1">
+                        <span name="side">a =</span>
+                        <input type="number" id="input1" min=0 max=200>
+                    </label>
+                </p>
+                <p>
+                    <label for="input2">
+                        <span name="angle">α =</span>
+                        <input type="number" id="input2" min=0 max=200>
+                    </label>
+                </p>
+                <p>
+                    <p id="incorrectCheckbox">Найти:</p>
+                    <select multiple size="3" name="tasks" id="tasks">
+                        <option value="0">Медианы</option>
+                        <option value="1">Неизвестные стороны</option>
+                        <option value="2">Радиус вписанной окружности</option>
+                    </select>
+                </p>
+                <p>
+                    <input type="button" id="calculate" value="Вычислить">
+                    <input type="button" id="cleardata" value="Очистить">
+                </p>
+            </form>
+        </div>
+        <div id="output">
+
+        </div>
+    </div>
+</body>
+<script src="program.js"> </script>
+</html>
