@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <script src="JavaScript/data.js"></script>
+    <script src="JavaScript/main.js"></script>
+    <script src="JavaScript/table.js"></script>
+    <script src="JavaScript/filter.js"></script>
+    <script src="JavaScript/sort.js"></script>
+    <title>Мое</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <a href="main.html">Квартиры Владивостока</a>
+            <a href="table.html" class="active">Список квартир Владивостока</a>
+        </div>
+    </header>
+
+    <details>
+        <summary> График </summary>
+        <form>
+            Значение по оси ОХ Значение по оси ОY <br>
+                <label><input type="radio" name="street" value="0"> Улица</label>
+                <label><input type="checkbox" name="mx_m2" value="0"> Максимальная квадратура </label><br>
+                <label><input type="radio" name="street" value="1"> Тип </label>
+                <label><input type="checkbox" name="mn_m2" value="1"> Минимальная квадратура <br></label>
+
+            <input type="button" value="Построить">
+        </form>
+    </details>
+    <details>
+        <summary> Фильтр </summary>
+        <form id="filter">
+            <p>
+                <label for="name">Название:</label>
+                <input type="text" id="name">
+            </p>
+            <p>
+                <label for="street">Улица:</label>
+                <input type="text" id="street">
+            </p>
+            <p>
+                <label for="type">Тип:</label>
+                <input type="text" id="type">
+            </p>
+            <p>
+                <label for="numRoom">Номер квартиры:</label>
+                <input type="text" id="numRoom">
+            </p>
+            <p>
+                <label for="roomFrom">Кол-во комнат </label>
+                от <input type="number" id="roomFrom"> 
+                до <input type="number" id="roomTo">
+            </p>
+            <p>
+                <label for="questsFrom">Количество гостей</label>
+                от <input type="number" id="questsFrom"> 
+                до <input type="number" id="questsTo">
+            </p>
+            <p>
+                <label for="metersFrom">m<sup>2</sup></label>
+                от <input type="number" id="metersFrom"> 
+                до <input type="number" id="metersTo">
+            </p>
+            <input type="button" value="Найти" id="1">
+            <input type="button" value="Очистить фильтры"> 
+        </form>
+    </details>
+
+    <details>
+        <summary> Сортировка </summary>
+        <form id="sort">
+            <p> Сортировать по</p>
+            <p>
+                <select id="fieldsFirst">
+                </select> 
+                по убыванию? <input  type="checkbox"  id="fieldsFirstDesc">
+            </p>
+            <p> 
+                <select id="fieldsSecond">
+                </select> 
+                по убыванию? <input  type="checkbox"  id="fieldsSecondDesc">
+            </p>
+            <p> 
+                <select id="fieldsThird">
+                </select> 
+                по убыванию? <input  type="checkbox"  id="fieldsThirdDesc">
+            </p>
+            <input type="button" value="Сортировать"> 
+            <input type="button" value="Сбросить сортировку">
+        </form> 
+    </details>
+
+    <table id="list">
+    </table>
+
+</body>
+</html>
