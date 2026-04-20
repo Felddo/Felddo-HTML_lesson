@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title> Трансформация и анимация</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="http://d3js.org/d3.v7.min.js"> </script>
+    <script src="JavaScript/main.js"></script>
+    <script src="JavaScript/image.js"></script>
+    <script src="JavaScript/path.js"></script>
+  </head>
+  <body>
+      <form id="setting">
+        <p>Масштаб<br>
+          <label for="mx">По x: </label>
+          <input type="number" name="mx" value="1" max="60" min="0">
+          <label for="mxInvis">до </label>
+          <input type="number" name="mxInvis" value="2" max="60" min="0"><br>
+          <label for="my">По y: </label>
+          <input type="number" name="my" value="1" max="60" min="0">
+          <label for="myInvis">до </label>
+          <input type="number" name="myInvis" value="2" max="60" min="0"><br>
+        </p>
+        <p>Поворот<br>
+          <label for="angle">угол: </label>
+          <input type="number" name="angle" value="0" max="360" min="0">
+          <label for="angleInvis">до </label>
+          <input type="number" name="angleInvis" value="180" max="360" min="0">
+        </p>
+        <p>Длительность<br>
+          <label for="timeAnimation">до: </label>
+          <input type="number" name="timeAnimation" value="1000" max="9000" min="0">
+        </p><br>
+        <p>
+          <input type="button" value="Анимировать">
+          <input type="button" value="Очистить">
+        </p>
+      </form>
+    <svg></svg>
+  </body>
+</html>
