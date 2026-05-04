@@ -1,0 +1,20 @@
+th{
+    background: gray;
+}
+
+td {
+  border: 1px solid black;
+}
+
+.active {
+  color: rgb(226, 43, 43);
+  font-weight: bold;
+}
+
+.hide {
+  display: none;
+}
+
+span {
+  margin: 10px;
+}
